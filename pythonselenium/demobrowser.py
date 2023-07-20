@@ -18,4 +18,4 @@ driver.refresh()
 driver.forward()
 #driver.close()
 
-/Users/ashishshukla/PycharmProjects/
+driver.close() #new change
