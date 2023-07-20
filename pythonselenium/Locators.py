@@ -1,7 +1,10 @@
+from select import select
+
 from selenium import webdriver
 
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 options=webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
@@ -29,5 +32,21 @@ assert 'success' in message
 
 #cssselector   remove // and @ from xpath, that is cssselector
 #tagname=[attribute='value']
+
+
+#static dop drown
+
+#select class is used here
+
+
+
+dropdown = Select(driver.find_element(By.ID, "exampleFormControlSelect1"))
+dropdown.select_by_index(1)
+#dropdown.select_by_value("Male") (not available for this expmple practice)
+dropdown.select_by_visible_text("Male")
+
+
+
+
 
 
