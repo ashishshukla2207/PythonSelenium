@@ -1,0 +1,4 @@
+2023-07-25 03:39:54,264 : INFO : test_logging :info
+2023-07-25 03:39:54,264 : WARNING : test_logging :warn
+2023-07-25 03:39:54,264 : ERROR : test_logging :error
+2023-07-25 03:39:54,264 : CRITICAL : test_logging :important
