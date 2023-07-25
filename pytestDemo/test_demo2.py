@@ -1,6 +1,9 @@
 import pytest
 
 
+#notes
+
+#data driven and parameterization can be done with return statements in tuple format
 @pytest.mark.skip
 def test_firsttest():
     msg = "Hello"

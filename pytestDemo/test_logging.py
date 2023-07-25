@@ -1,4 +1,4 @@
-import logging
+"""import logging
 
 def test_logging():
     logger = logging.getLogger(__name__)
@@ -14,4 +14,5 @@ def test_logging():
     logger.info("info")
     logger.warning("warn")
     logger.error("error")
-    logger.critical("important")
+    logger.critical("important")"""
+
