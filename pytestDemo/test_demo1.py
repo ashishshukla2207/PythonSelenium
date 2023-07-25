@@ -21,3 +21,4 @@ def test_calculation():
 
 def test_crossbrowserfn(crossbrowser):
     print(crossbrowser)
+    print(crossbrowser[1])

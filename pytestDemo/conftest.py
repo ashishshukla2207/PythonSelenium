@@ -12,17 +12,19 @@ def setup():  #before method
 
 
 
-#use @pytest.usefixture(setup) to pass it to all methods at once
-#   @pytest.usefixture(setup scope=class)  only once setup will run
+#use @pytestDemo.usefixture(setup) to pass it to all methods at once
+#   @pytestDemo.usefixture(setup scope=class)  only once setup will run
 
 
 
 
-@pytest.fixture()
+@pytest.fixture(scope= "class")
 def dataLoad():
+    print("User profile data is being created")
     return ["ashish", "shukla", "ashishshukla"]
 
 
-@pytest.fixture(params =["chrome", "IE", "Safari"])
+
+@pytest.fixture(params =[("chrome", "Ashish", "Shukla"), "IE", ("Safari", "Hello")])
 def crossbrowser(request):
     return request.param
